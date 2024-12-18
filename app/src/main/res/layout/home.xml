@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#444563"
-
+    android:background="#D3D3D3"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="5dp"
@@ -18,43 +17,14 @@
     app:layout_constraintVertical_bias="0.0"
     tools:context=".MainActivity">
 
-
-    <!--        <ImageView-->
-    <!--            android:src="@drawable/whatsapp_image_2024_11_12_at_19_28_51"-->
-    <!--            android:layout_width="200dp"-->
-    <!--            android:layout_height="300dp"/>-->
-
-    <!--        <TextView-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:background="#444563"-->
-    <!--            android:padding="30dp"-->
-    <!--            android:text="Login"-->
-    <!--            android:textColor="#6dffbf"-->
-    <!--            android:textSize="25dp" />-->
-
-    <!--        <LinearLayout-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:gravity="center"-->
-    <!--            android:orientation="horizontal"-->
-    <!--            android:padding="25dp">-->
-
-    <!--            <Button-->
-    <!--                android:id="@+id/btn_reset"-->
-    <!--                android:layout_width="wrap_content"-->
-    <!--                android:layout_height="wrap_content"-->
-    <!--                android:layout_marginEnd="15dp"-->
-    <!--                android:text="Reset"-->
-    <!--                android:textAllCaps="false" />-->
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:background="@color/red"
         android:padding="20dp"
-        android:text="Tasktagus"
+        android:text="Create account"
         android:textColor="@color/black"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,8 +38,8 @@
         android:layout_marginTop="160dp"
         android:hint="User Name"
         android:textAlignment="center"
-        android:textColor="#6bfff7"
-        android:textColorHint="#52afaa"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -80,13 +50,12 @@
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginTop="20dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
-        android:textColor="#6bfff7"
-        android:textColorHint="#52afaa"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,8 +69,23 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textAlignment="center"
-        android:textColor="#6bfff7"
-        android:textColorHint="#52afaa"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,15 +93,14 @@
 
     <Button
         android:id="@+id/btn_submit"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:padding="15dp"
+        android:layout_marginBottom="50dp"
+        android:padding="9dp"
         android:text="Login"
         android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_password" />
-    <!--        </LinearLayout>-->
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

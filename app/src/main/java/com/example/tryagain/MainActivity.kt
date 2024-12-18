@@ -1,27 +1,26 @@
 package com.example.tryagain
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.layout)
+        setContentView(R.layout.layout1)
 
         val textView4 = findViewById<TextView>(R.id.textView4)
-        val data = intent.getStringExtra("key")
+        val nextButton = findViewById<Button>(R.id.button4)
 
+        val data = intent.getStringExtra("key")
         textView4.text = "$data"
 
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-//            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-//            insets
-//        }
+        nextButton.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("key", "Data passed to Second Activity") // Pass additional data if needed
+            startActivity(intent)
+        }
     }
 }
