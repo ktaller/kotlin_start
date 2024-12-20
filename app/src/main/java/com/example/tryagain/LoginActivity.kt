@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 class LoginActivity:AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.home)
+        setContentView(R.layout.layout1)
 
         val nameEditTextView: EditText = findViewById(R.id.et_user_name)
         val emailEditTextView: EditText = findViewById(R.id.editTextTextEmailAddress)

@@ -9,10 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout1)
+        setContentView(R.layout.layout2)
 
         val textView4 = findViewById<TextView>(R.id.textView4)
-        val nextButton = findViewById<Button>(R.id.button4)
+        val nextButton = findViewById<Button>(R.id.button)
 
         val data = intent.getStringExtra("key")
         textView4.text = "$data"
